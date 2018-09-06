@@ -1,0 +1,56 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding:0;
+	margin: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	line-height: 1.42;
+	font-size: 15px;
+	@include roboto(regular);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+	max-width: rem(980px);
+	min-width: rem(980px);
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.content {
+	height: 100%;
+	transition: transform 1s;
+}

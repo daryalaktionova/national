@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Национальный расчетный депозиторий </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<section class="main">
+				<div class="container">
+					<div class="main__content">
+						<h1 class="name">
+							Борис Леонидович Пастернак
+						</h1>
+						<span class="main__title">
+							Русский поэт, писатель и переводчик
+						</span>
+						<a href="#form" class="main__btn"></a>
+					</div>
+				</div>
+			</section>
+			<section class="form" id="form">
+				<div class="container">
+					<div class="form">
+						<form class="form__layout" id="myForm" name="myForm">
+							<div class="form__row">
+								<input type="text" class="form__input" id="name" name="name" required placeholder="Имя">
+								<div class="error-text"> </div>
+							</div>
+							<div class="form__row">
+								<input type="email" class="form__input" id="email" name="email" required placeholder="Email">
+								<div class="error-text"></div>
+							</div>
+							<div class="form__row">
+								<input type="tel" class="form__input" id="tel" name="tel" required placeholder="Телефон">
+								<div class="error-text"></div>
+							</div>
+							<div class="form__row">
+								<div class="form__field-checkbox">
+									<input type="checkbox" class="form__checkbox" id="checkbox" hidden name="checkbox">
+									<label class="form__label" for="checkbox">
+										<p class="form__label-desc">Согласие на обработку персональных данных</p>
+									</label>
+									<div class="error-text"></div>
+								</div>
+							</div>
+							<div class="form__row">
+								<input type="submit" id="send" class="btn-send" value="Отправить">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+</body>
+<script src="./libs/jquery-3.3.1.min.js"></script>
+<script src="./js/app.min.js"></script>
+
+</html>

@@ -1,0 +1,26 @@
+@mixin roboto($style: regular) {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    @if $style==regular{
+        font-weight: 400; 
+    }
+    @else if $style==bold {
+        font-weight: 700;
+
+    }
+    @else if $style==thin {
+        font-weight: 100;
+
+    }
+    @else if $style==light {
+        font-weight: 300;
+
+    }
+    @else if $style==medium {
+        font-weight: 500;
+
+    }
+    @else if $style==black {
+        font-weight: 900;
+
+    }
+}
