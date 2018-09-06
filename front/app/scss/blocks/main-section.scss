@@ -1,5 +1,5 @@
 .main {
-    height: 100%;
+    height: 130%;
     background: url('../../app/images/bg.jpg'), linear-gradient(to top, $filter-violet 50%, $filter-violet 50%);
     background-blend-mode: luminosity;
     background-size: cover;
@@ -13,17 +13,7 @@
     font-size: rem(24px);
 }
 
-.main__btn {
-    background-color: $green;
-    transition: .2s;
-    color: white;
-    text-decoration: none;
-    border-radius: rem(30px);
-    padding: rem(18px) rem(27px);
-    margin-top: rem(20px);
-    display: inline-block;
-    width: auto;
-    &:hover {
-        background-color: $green-light;
-    }
+.main__content {
+    transform: translateY(-60%);
 }
+

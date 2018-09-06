@@ -54,3 +54,22 @@ p {
 	height: 100%;
 	transition: transform 1s;
 }
+
+.btn {
+	background-color: $green;
+    transition: .2s;
+    color: white;
+    text-decoration: none;
+    border-radius: rem(30px);
+	padding: rem(18px) rem(27px);
+    margin-top: rem(20px);
+	display: inline-block;
+	outline: none;
+	width: auto;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+    &:hover {
+        background-color: $green-light;
+    }
+}

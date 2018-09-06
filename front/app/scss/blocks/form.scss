@@ -1,0 +1,107 @@
+.form {
+    width: 100%;
+    height: 80%;
+    background-color: $bg;
+    position: relative;
+}
+
+.form__wrapper {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: rem(5px);
+    background: $white;
+    position: relative;
+    top: -30px;
+    box-shadow: 0 rem(8px) rem(10px) $black;
+}
+
+.form__input {
+    width: 100%;
+    height: rem(44px);
+    border: none;
+    border-bottom: $gray solid 1px;
+    @include roboto(regular);
+    font-size: rem(14px);
+    padding-bottom: 2px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.form__input::-webkit-input-placeholder {
+    color: $gray;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.form__input::-moz-placeholder          {
+    color: $gray;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}/* Firefox 19+ */
+.form__input:-moz-placeholder           {
+    color: $gray;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}/* Firefox 18- */
+.form__input:-ms-input-placeholder      {
+    color: $gray;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.error-text {
+    height: rem(10px);
+    color: $red;
+    font-size: 10px;
+    @include roboto(regular);
+}
+
+.form__label:before {
+    content: '';
+    width: rem(20px);
+    height: rem(20px);
+    background-color: $white;
+    margin-right: rem(8px);
+    border-radius: rem(5px);
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0.2;
+    cursor: pointer;
+}
+
+.form__field-checkbox {
+    margin-top: rem(17px);
+}
+
+.form__label {
+    display: flex;
+    width: 95%;
+    cursor: pointer;
+}
+
+.form__checkbox:checked+.form__label:before {
+    background: $white url('../images/check.png') no-repeat;
+    background-position: center;
+}
+
+.form__label-desc {
+    @include roboto(light);
+    font-size: 14px;
+    color: $agreement;
+    line-height: 1.6;
+}
+
+.btn--form {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: rem(40px);
+    margin-bottom: rem(40px);
+    box-shadow: 0 rem(2px) rem(2px) $violet;
+}
+
+.form__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
