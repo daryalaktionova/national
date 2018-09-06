@@ -24,3 +24,7 @@
 
     }
 }
+
+@function rem($px) {
+	@return $px / 16px*1rem;
+}

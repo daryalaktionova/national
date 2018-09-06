@@ -1,5 +1,29 @@
 .main {
     height: 100%;
-    background: url('../../app/images/bg.jpg') no-repeat;
+    background: url('../../app/images/bg.jpg'), linear-gradient(to top, $filter-violet 50%, $filter-violet 50%);
+    background-blend-mode: luminosity;
     background-size: cover;
+    color: $white;
+    text-align: center;
+}
+
+.main__title {
+    text-transform: uppercase;
+    @include roboto(regular);
+    font-size: rem(24px);
+}
+
+.main__btn {
+    background-color: $green;
+    transition: .2s;
+    color: white;
+    text-decoration: none;
+    border-radius: rem(30px);
+    padding: rem(18px) rem(27px);
+    margin-top: rem(20px);
+    display: inline-block;
+    width: auto;
+    &:hover {
+        background-color: $green-light;
+    }
 }
