@@ -11,9 +11,34 @@
     text-transform: uppercase;
     @include roboto(regular);
     font-size: rem(24px);
+    @include phones {
+        font-size: rem(18px);
+    }
+
 }
 
 .main__content {
     transform: translateY(-60%);
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 60%;
+        transform: none;
+        width: 68%;
+    }
 }
+
+.btn--main {
+    @include tablets {
+        width: 60%;
+        margin: 0 auto;
+    }
+    @include phones {
+        white-space: nowrap;
+        text-align: center;
+    }
+}
+
+
 

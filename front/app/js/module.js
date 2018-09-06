@@ -261,3 +261,11 @@ let _ajaxInquiry = (function(e){
 
 
     send.addEventListener('click', _ajaxInquiry)
+
+
+    /*Замена текста кнопки на главном экране на моб утсройствах */
+
+    const btn = document.querySelector('.btn--main');
+    if(isItMobile) {
+        btn.innerHTML = "скролл вниз";
+    }

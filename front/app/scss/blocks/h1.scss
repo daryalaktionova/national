@@ -1,4 +1,8 @@
 .name {
     font-size: rem(64px);
     @include roboto(bold);
+    @include phones {
+        font-size: rem(36px);
+        text-align: center;
+    }
 }

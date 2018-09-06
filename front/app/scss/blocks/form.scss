@@ -90,6 +90,7 @@
     font-size: 14px;
     color: $agreement;
     line-height: 1.6;
+    white-space: nowrap;
 }
 
 .btn--form {
@@ -109,4 +110,7 @@
 .form__layout {
     margin-top: rem(30px);
     width: 60%;
+    @include phones {
+        width: 98%;
+    }
 }

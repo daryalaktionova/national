@@ -28,3 +28,21 @@
 @function rem($px) {
 	@return $px / 16px*1rem;
 }
+
+@mixin tablets {
+	@media screen and (max-width: $tablets) {
+		@content
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: $phones) {
+		@content
+	}
+}
+
+@mixin phones-small {
+	@media screen and (max-width: $phones-small) {
+		@content
+	}
+}

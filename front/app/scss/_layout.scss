@@ -40,7 +40,6 @@ p {
 
 .container {
 	max-width: rem(980px);
-	min-width: rem(980px);
 	width: 95%;
 	margin: 0 auto;
 	display: flex;
@@ -48,6 +47,12 @@ p {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	@include tablets {
+		width: 80%;
+	}
+	@include phones {
+		width: 96%;
+	}
 }
 
 .content {
